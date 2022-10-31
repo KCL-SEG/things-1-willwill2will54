@@ -1,3 +1,7 @@
 from django.db import models
 
-# Create your models here.
+class Thing(models.Model):
+    """Thing model, model of a thing"""
+    name = models.TextField()
+    description = models.TextField()
+    quantity = models.IntegerField()
